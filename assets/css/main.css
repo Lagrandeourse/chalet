@@ -1681,16 +1681,16 @@ input, select, textarea {
     height: auto;
     display: block;
     margin: 0 auto;
-	  border: 1px solid rgba(255,255,255,0.8);
-    padding: 18px;
-    background: rgba(0,0,0,0.35);
-    backdrop-filter: blur(4px);
+.image.main img {
+    border: 2px solid #ffffff;
+    border-radius: 8px;
 }
 @media screen and (max-width: 736px) {
     .logo-title {
         max-width: 250px;
     }
 }
+
 
 
 
