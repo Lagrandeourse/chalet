@@ -1149,20 +1149,28 @@ input, select, textarea {
 			z-index: 2;
 		}
 
-		#bg:after {
-			-moz-transform: scale(1.125);
-			-webkit-transform: scale(1.125);
-			-ms-transform: scale(1.125);
-			transform: scale(1.125);
-			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
-			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
-			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
-			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: none;
-			background-position: center;
-			background-size: cover;
-			background-repeat: no-repeat;
-			z-index: 1;
+		#bg {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#bg video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+#wrapper {
+    position: relative;
+    z-index: 2;
+}
+
 		}
 
 		body.is-article-visible #bg:after {
@@ -1659,7 +1667,7 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
-##bg video {
+#bg video {
   position: absolute;
   top: 0; left: 0;
   width: 100%;
@@ -1679,5 +1687,6 @@ input, select, textarea {
         max-width: 250px;
     }
 }
+
 
 
