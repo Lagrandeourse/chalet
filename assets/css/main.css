@@ -1705,6 +1705,16 @@ input, select, textarea {
 .image.no-overlay:before {
   display: none !important;
 }
+/* Réduction espace autour du logo */
+#header > * {
+    margin-top: 1.5rem !important;
+}
+
+#header .content .inner {
+    padding: 1.5rem 2rem !important;
+}
+
+
 
 
 
