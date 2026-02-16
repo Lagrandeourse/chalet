@@ -1702,6 +1702,9 @@ input, select, textarea {
         max-width: 250px;
     }
 }
+.image.no-overlay:before {
+  display: none !important;
+}
 
 
 
