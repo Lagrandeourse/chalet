@@ -1705,27 +1705,7 @@ input, select, textarea {
 .image.no-overlay:before {
   display: none !important;
 }
-/* Réduction espace autour du logo */
-#header > * {
-    margin-top: 1.5rem !important;
-}
 
-#header .content .inner {
-    padding: 1.5rem 2rem !important;
-}
-#header .content {
-    margin: 0 !important;
-}
-
-#header .content .inner {
-    padding-top: 0.5rem !important;
-    padding-bottom: 0.5rem !important;
-}
-
-/* Supprime la marge verticale du logo */
-.logo-title {
-    margin: 0 auto !important;
-}
 .logo-title {
     opacity: 0.8;
     transition: opacity 0.4s ease;
@@ -1734,6 +1714,7 @@ input, select, textarea {
 .logo-title:hover {
     opacity: 1;
 }
+
 
 
 
