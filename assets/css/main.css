@@ -1733,7 +1733,7 @@ cursor: pointer;
 }
 
 .galerie img:hover {
-transform: scale(1.15);
+transform: scale(1,5);
 box-shadow: 0 15px 35px rgba(0,0,0,0.5);
 }
 .video-orcieres {
@@ -1756,6 +1756,7 @@ border-bottom: none !important;
 text-align: justify;
 text-justify: inter-word;
 }
+
 
 
 
