@@ -1742,11 +1742,17 @@ border-radius: 6px;
 margin-bottom: 2rem;
 cursor: pointer;
 transition: transform 0.4s ease;
+border-bottom: none;
 }
 
 .video-orcieres:hover {
 transform: scale(1.02);
 }
+
+a:has(.video-orcieres) {
+border-bottom: none !important;
+}
+
 
 
 
