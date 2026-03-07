@@ -1752,6 +1752,10 @@ transform: scale(1.02);
 a:has(.video-orcieres) {
 border-bottom: none !important;
 }
+#orcieres p {
+text-align: justify;
+text-justify: inter-word;
+}
 
 
 
