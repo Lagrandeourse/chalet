@@ -24,7 +24,19 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
+<script>
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add("visible");
+}
+});
+});
 
+document.querySelectorAll(".fade-image").forEach(img => {
+observer.observe(img);
+});
+</script>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -67,7 +79,7 @@
 							<article id="chalet">
 								<h2 class="major">Le chalet</h2>
 <span class="image main no-overlay">
-  <img src="images/chaletlagrandeourseorcieres.jpg" style="opacity:1;" alt="Chalet La Grande Ourse" />
+  <img src="images/chaletlagrandeourseorcieres.jpg" class="fade-image" style="opacity:1;" alt="Chalet La Grande Ourse" />
 </span>						
 								<p style="text-align: justify;">En pleine nature, à Orcières, à quelques minutes des pistes de ski de Merlette, le chalet vous accueille pour profiter du calme et de sa vue panoramique. Le chalet offre sur 160 m², un double salon/salle à manger, une cuisine ouverte entièrement équipée, 3 chcambres à l'étage dont une master (2 sdb à l'étage), un dortoir avec un salon, une 4ième chambre et une salle d'eau, une ski room, une buanderie. Une large terrasse permet de profiter des couchers de soleil sur la vallée.</p>
 				<h3><strong>Équipements :</strong></h3>
@@ -91,7 +103,7 @@ sèche-chaussures, appareil à raclette, luges à disposition…
 <li>Hors saison : A partir de 450 euros/nuit, 2 nuits minimum</li>
 </ul>
  <span class="image main no-overlay">
-  <img src="images/avisclientchaletlagrandeourse.jpg" style="opacity:1;" alt="Avis client Chalet La Grande Ourse" />
+  <img src="images/avisclientchaletlagrandeourse.jpg" class="fade-image"  style="opacity:1;" alt="Avis client Chalet La Grande Ourse" />
 </span>	
 </p>
 
@@ -472,6 +484,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</body>
 </html>
+
 
 
 
