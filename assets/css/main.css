@@ -1760,6 +1760,17 @@ border-bottom: none !important;
 text-align: justify;
 text-justify: inter-word;
 }
+.fade-image {
+opacity: 0;
+transform: translateY(20px);
+transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-image.visible {
+opacity: 1;
+transform: translateY(0);
+}
+
 
 
 
