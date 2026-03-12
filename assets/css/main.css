@@ -1770,6 +1770,10 @@ transition: opacity 1s ease, transform 1s ease;
 opacity: 1;
 transform: translateY(0);
 }
+#chalet .image img {
+border-radius: 20px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
 
 
 
